@@ -5,3 +5,11 @@ body {
 	font-size: 18px;
 	line-height: 167%;
 }
+
+blockquote>p:first-of-type::before {
+	content: "«";
+}
+
+blockquote>p:last-of-type::after {
+	content: "»";
+}
