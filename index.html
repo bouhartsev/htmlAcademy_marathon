@@ -110,32 +110,42 @@
     	</section>
     	<section id="feedback">
     		<h2>Отзывы</h2>
-			<blockquote>
-				<p>Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
-				<p>Работа шла быстро, было очень приятно общаться и взаимодествовайть с сотрудниками. Не ожидала, что это будет так легко!</p>
-				<p>Буду советовать и своим друзьям к вам обращаться!</p>
-				<cite>Анна Беловская</cite>
-			</blockquote>
-   			<img src="img/Rectangle%20141.png" alt="Feedback 1-st">
-   			<img src="img/image%2062.png" alt="Feedback 2-nd">
+    		<div class="item">
+				<blockquote>
+					<p>Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+					<p>Работа шла быстро, было очень приятно общаться и взаимодествовайть с сотрудниками. Не ожидала, что это будет так легко!</p>
+					<p>Буду советовать и своим друзьям к вам обращаться!</p>
+					<cite>Анна Беловская</cite>
+				</blockquote>
+				<div class="images">
+					<img src="img/Rectangle%20141.png" alt="Feedback 1-st">
+					<img src="img/image%2062.png" alt="Feedback 2-nd">
+				</div>
+   			</div>
     	</section>
     	<section id="request" class="brown">
+    	<iframe
+			  width="590"
+			  height="625"
+			  frameborder="0" style="border:0"
+			  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAr26NUKPvmjLXofqcxEWeaPTVige7pXv0&q=place_id:Ej5Cb2xzaGF5YSBLb255dXNoZW5uYXlhIFN0LCAxOSwgU2Fua3QtUGV0ZXJidXJnLCBSdXNzaWEsIDE5MTE4NiJQEk4KNAoyCbuIQjUOMZZGEZMu3y45kXnjGh4LEO7B7qEBGhQKEglf9KBC-zCWRhHCuBYTZeEgbAwQEyoUChIJX9Vhtg8xlkYRMOTrXQV_zNA&zoom=17&center=59.938500, 30.323917" allowfullscreen loading="lazy" class="map" tabindex="-1">
+			</iframe>
     		<h2>Оставить заявку</h2>
-    		<p>Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
-    		<form action="">
-    			<input type="text" placeholder="Ваше имя">
-    			<input type="tel" placeholder="Введите телефон">
+    		<p class="description">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+    		<form action="#request">
+    			<input type="text" placeholder="Ваше имя" name="pers_name" id="pers_name">
+    			<input type="tel" placeholder="Введите телефон" name="phone" id="pers_phone">
     			<input type="submit" value="Оставить заявку" class="btnRequest">
     		</form>
-<!--    		map-->
     	</section>
     </main>
 
     <footer>
+    	<div class="footer_primary">
     	<a href="tel:79818574624">+7 (981) 857-46-24</a>
-    	<p>г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
-    	<p>ИП Королёва А.А.</p>
-
+    	<p><a href="https://goo.gl/maps/1rdFpsPUPhE5EonL9">г. Санкт-петербург, ул. Большая Конюшенная, 19</a></p>
+    	<p class="footer_float">ИП Королёва А.А.</p>
+    	</div>
     	<p>Сверстал <a href="bouhartsev.top">Матвей Бухарцев</a> <a href="https://www.figma.com/file/MTtAmzLAzCsMHDsEwTBgLg/%D0%9C%D0%B0%D1%80%D0%B0%D1%84%D0%BE%D0%BD-3.0?node-id=0%3A1">по макету HTML Academy</a> в 2021 году.</p>
     </footer>
 </body>
