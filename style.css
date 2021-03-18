@@ -143,6 +143,7 @@ h2 {
 main>section#about>img {
 	float: left;
 	margin-right: 60px;
+	max-width: 100%;
 }
 
 main>section#about {
@@ -188,6 +189,7 @@ main>section#works .work {
 	position: relative;
 	height: fit-content;
 	width: fit-content;
+	max-width: 100%;
 
 	margin-right: 10px;
 	margin-bottom: 30px;
@@ -310,7 +312,6 @@ main>section#feedback {
 main>section#feedback::before {
 	content: "⟵" / "Предыдущий";
 	left: 180px;
-	nav-index: 1;
 }
 main>section#feedback::after {
 	content: "⟶" / "Следующий";
@@ -439,4 +440,59 @@ footer p, .footer_primary p {
 .footer_float {
 	flex: 0.8 0;
 	text-align: end;
+}
+
+@media (max-width: 1450px) {
+	main>section#request .map {
+		max-width: 40%;
+	}
+}
+
+@media (max-width: 1300px) {
+	nav {
+		flex-direction: column;
+	}
+
+	nav>ul {
+		flex-direction: column;
+	}
+
+	main>section#team>div {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	main>section#team figure {
+		margin-bottom: 30px;
+	}
+
+	main>section#feedback {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	main>section#feedback::before {
+		left: 10%;
+	}
+	main>section#feedback::after {
+		right: 10%;
+	}
+}
+
+@media (max-width: 1000px) {
+	main>section.about_nums {
+		flex-direction: column;
+	}
+
+	main>section.about_nums p {
+		margin-bottom: 30px;
+	}
+
+	main>section#how>div {
+		flex-direction: column;
+	}
+
+	main>section#how p {
+		margin-bottom: 30px;
+	}
 }
