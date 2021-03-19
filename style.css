@@ -424,7 +424,7 @@ main>section#request input {
 main>section#request .map {
 	float: right;
 	margin-left: 30px;
-	max-width: 60%;
+	max-width: 50%;
 }
 
 footer {
@@ -446,12 +446,6 @@ footer p, .footer_primary p {
 .footer_float {
 	flex: 0.8 0;
 	text-align: end;
-}
-
-@media (max-width: 1450px) {
-	main>section#request .map {
-		max-width: 40%;
-	}
 }
 
 @media (max-width: 1300px) {
@@ -500,5 +494,9 @@ footer p, .footer_primary p {
 	}
 	main>section#feedback::after {
 		right: 10%;
+	}
+	
+	main>section#request .map {
+		max-width: 40%;
 	}
 }
