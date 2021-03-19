@@ -112,11 +112,17 @@ h1 {
 section {
 	display: flow-root;
 	padding: 0 185px;
-	max-width: 100vw;
+	max-width: 100%;
 }
 
 main>section {
 	padding-top: 15px;
+}
+
+footer, header, main {
+	margin: auto;
+	width: 1800px;
+	max-width: 100%;
 }
 
 main>section.brown {
@@ -173,11 +179,11 @@ main>section.about_nums span {
 }
 
 main>section#works {
-	width: 100%;
 	position: relative;
-	padding: 15px 100px 65px;
+	padding: 15px 90px 65px 100px;
 	box-sizing: border-box;
 	line-height: 0;
+/*	text-align: center;*/
 }
 
 main>section#works h2 {
@@ -346,7 +352,7 @@ main>section#feedback .item {
 
 main>section#feedback blockquote {
 	width: 45%;
-	min-width: 500px;
+	min-width: 400px;
 
 	margin: 0;
 	margin-right: 10px;
@@ -465,18 +471,6 @@ footer p, .footer_primary p {
 	main>section#team figure {
 		margin-bottom: 30px;
 	}
-
-	main>section#feedback {
-		padding-left: 10%;
-		padding-right: 10%;
-	}
-
-	main>section#feedback::before {
-		left: 10%;
-	}
-	main>section#feedback::after {
-		right: 10%;
-	}
 }
 
 @media (max-width: 1000px) {
@@ -494,5 +488,17 @@ footer p, .footer_primary p {
 
 	main>section#how p {
 		margin-bottom: 30px;
+	}
+	
+	main>section#feedback {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	main>section#feedback::before {
+		left: 10%;
+	}
+	main>section#feedback::after {
+		right: 10%;
 	}
 }
